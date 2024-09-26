@@ -1,49 +1,161 @@
 ---
-import Container from "../components/Container.astro"
-import Layout from '../layouts/Layout.astro';
+import Container from "../components/Container.astro";
+import Layout from "../layouts/Layout.astro";
 import Team from "../components/Team.astro";
 ---
 
 <Layout title="Welcome to My site">
-	<main class="space-y-20">
-		<Container>
-            <div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
+    <main class="space-y-20">
+        <Container>
+            <div
+                class="relative flex flex-col-reverse items-center md:flex-row"
+                id="hero"
+            >
                 <div class="row items-center py-5 md:pb-20 md:pt-10">
                     <div class="text-center space-y-10">
-                        <h2 class="text-5xl font-medium leading-none md:text-6xl">We Navigate the <br> digital landscape <br> for success</h2>
-                        <p class="mt-6 mb-8  text-xl font-normal leading-7 sm:mb-12">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-                        <a class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex" rel="noopener noreferrer"  href="https://github.com/manulthanura/Positivus" target="_blank">
-                            <h2 class="text-center text-xl font-normal leading-7">Book a consultation</h2>
+                        <h1
+                            class="text-5xl font-medium leading-none md:text-6xl"
+                        >
+                            Es hora de viajar
+                        </h1><br /><h2>Con Beeltraveler</h2>
+                        <p
+                            class="mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12"
+                        >
+                            BeeTraveler es una plataforma innovadora diseñada
+                            para facilitar la planificación y organización de
+                            viajes, ofreciendo herramientas intuitivas para que
+                            los viajeros puedan explorar, reservar y disfrutar
+                            de experiencias únicas.
+                        </p><br />
+                        <a href="">
+                            <button
+                                class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 transition-transform duration-300 ease-in-out hover:scale-105"
+                            >
+                                <span
+                                    class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#b6f55f_0%,#96e53b_50%,#b6f55f_100%)]"
+                                ></span>
+                                <span
+                                    class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-lime-400 px-8 py-1 text-sm font-medium text-black backdrop-blur-3xl"
+                                >
+                                    Comienza el viaje!
+                                </span>
+                            </button>
                         </a>
                     </div>
                 </div>
             </div>
-            
-            <div class="flex-row items-center">
-                <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
-                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/01.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+
+            <div
+                class="w-full p-12 bg-zinc-900 rounded-[45px] justify-start items-start gap-16 inline-flex text-white"
+            >
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 gap-2 divide-x-0 md:divide-x divide-y md:divide-y-0"
+                >
+                    <div
+                        class="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2"
+                    >
+                    <h1>misión</h1>
+                        <div class="w-full text-lg font-normal">
+                            BeeTraveler se compromete a transformar la
+                            experiencia de viaje al proporcionar una plataforma
+                            integral que facilite la planificación, exploración
+                            y reserva de viajes personalizados. A través de
+                            herramientas innovadoras y un enfoque centrado en el
+                            usuario, nuestra misión es empoderar a los viajeros
+                            para que descubran y vivan aventuras únicas,
+                            fomentando conexiones auténticas con los destinos y
+                            sus culturas
+                        </div>
+                        <div
+                            class="justify-start items-center gap-[15px] inline-flex"
+                        >
+                            <div
+                                class="text-lime text-xl font-normal leading-7"
+                            >
+                                
+                            </div>
+                           
+                        </div>
                     </div>
-                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/02.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    <div
+                        class="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2"
+                    >
+                    <h1>visión</h1>
+                        <div class="w-full text-lg font-normal">
+                            Aspiramos a ser la plataforma líder en el sector de
+                            viajes, reconocida globalmente por nuestra capacidad
+                            para innovar y mejorar continuamente la experiencia
+                            del viajero. Nuestra visión es crear un ecosistema
+                            donde cada viaje sea accesible, sostenible y
+                            memorable, permitiendo que personas de todo el mundo
+                            exploren el planeta de manera responsable y
+                            enriquecedora
+                        </div>
+                        <div
+                            class="justify-start items-center gap-[15px] inline-flex"
+                        >
+                            <div
+                                class="text-lime text-xl font-normal leading-7"
+                            >
+                               
+                            </div>
+                           
+                        </div>
                     </div>
-                    <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/03.svg" class="h-9 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-                    </div>
-                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/04.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-                    </div>
-                    <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/05.svg" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-                    </div>
-                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/06.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+                    <div
+                        class="flex-col items-start gap-5 inline-flex px-2 md:px-6 py-6 md:py-2"
+                    >
+                        <div class="w-full text-lg font-normal">
+                            <h1>Valores de BeeTraveler</h1>
+                            <ul>
+                                <li>
+                                    <strong>Innovación:</strong> Fomentamos la creatividad
+                                    y la mejora continua.
+                                </li>
+                                <li>
+                                    <strong>Orientación al Cliente:</strong> Nos
+                                    comprometemos a ofrecer un servicio excepcional.
+                                </li>
+                                <li>
+                                    <strong>Sostenibilidad:</strong> Promovemos prácticas
+                                    responsables en el turismo.
+                                </li>
+                                <li>
+                                    <strong>Autenticidad:</strong> Valoramos las
+                                    experiencias genuinas y únicas.
+                                </li>
+                                <li>
+                                    <strong>Colaboración:</strong> Creemos en el
+                                    trabajo en equipo y relaciones sólidas.
+                                </li>
+                                <li>
+                                    <strong>Accesibilidad:</strong> Hacemos que los
+                                    viajes sean accesibles para todos.
+                                </li>
+                                <li>
+                                    <strong>Responsabilidad:</strong> Asumimos el
+                                    impacto en la sociedad y el medio ambiente.
+                                </li>
+                                <li>
+                                    <strong>Diversidad e Inclusión:</strong> Celebramos
+                                    la diversidad y promovemos la inclusión.
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="justify-start items-center gap-[15px] inline-flex"
+                        >
+                            <div
+                                class="text-lime text-xl font-normal leading-7"
+                            >
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <br />
+            <Team />
+            <br />
         </Container>
-        <br>
-        <Team/>
-        <br>
-	</main>
-</Layout>
+    </main></Layout
+>
