@@ -10,6 +10,7 @@ export default {
 		"2xl": "1536px",
 	  },
 	  colors: {
+		"_comment": "Los buttons tienen este color: bg-[conic-gradient(from_90deg_at_50%_50%,#b6f55f_0%,#96e53b_50%,#b6f55f_100%)]",
 		primary: "#B9FF66",
 		black: "#000000",
 		white: "#FFFFFF",

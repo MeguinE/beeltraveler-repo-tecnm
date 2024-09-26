@@ -1,43 +1,50 @@
 ---
-import Container from "./Container.astro"
+import Container from "./Container.astro";
 ---
+
 <Container>
-<div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
-    <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <div class="text-left space-y-3">
-            <h1 class="text-5xl font-medium leading-none md:text-6xl text-center md:text-left">Navigating the <br> digital landscape <br> for success</h1>
-            <p class="mt-6 mb-8  text-xl font-normal leading-7 sm:mb-12 text-center md:text-left">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-            <div class="w-full justify-center md:justify-start items-center inline-flex">
-                <a href="https://github.com/manulthanura/Positivus" target="_blank" class="px-8 py-5 bg-zinc-900 hover:bg-white rounded-2xl text-center text-white hover:text-black border text-xl font-normal leading-7">Book a consultation
+    <div
+        class="relative flex flex-col-reverse items-center md:flex-row"
+        id="hero"
+    >
+        <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+            <div class="text-left space-y-3">
+                <h1
+                    class="text-5xl font-medium leading-none md:text-6xl text-center md:text-left"
+                >
+                    BeelTraveler<br />La ruta comienza en<br />México
+                </h1>
+                <p
+                    class="mt-6 mb-8 text-xl font-normal leading-7 sm:mb-12 text-center md:text-left"
+                >
+                    Una plataforma digital que conecta viajeros con agencias de
+                    turismo en México. Promovemos el turismo sostenible y el
+                    desarrollo local, garantizando experiencias auténticas.
+                </p>
+                <div
+                    class="w-full justify-center md:justify-start items-center inline-flex"
+                >
+                <a href="">
+                    <button
+                        class="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-gray-50 transition-transform duration-300 ease-in-out hover:scale-105"
+                    >
+                        <span
+                            class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#b6f55f_0%,#96e53b_50%,#b6f55f_100%)]"
+                        ></span>
+                        <span
+                            class="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-lime-400 px-8 py-1 text-sm font-medium text-black backdrop-blur-3xl"
+                        >
+                            Comienza el viaje.
+                        </span>
+                    </button>
                 </a>
+                
+                
+                </div>
             </div>
         </div>
-    </div>
-    <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
-        <img src="/Hero.svg" width="100%" alt="Hero"/>
-    </div>
-</div>
-
-<div class="flex-row items-center">
-    <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/01.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/02.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/03.svg" class="h-9 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/04.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/05.svg" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-        </div>
-        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-            <img src="./clients/06.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
+        <div class="flex items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
+            <img src="/turismo.jpg" width="100%" alt="Hero" />
         </div>
     </div>
-</div>
 </Container>
