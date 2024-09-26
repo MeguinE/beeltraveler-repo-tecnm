@@ -1,0 +1,231 @@
+---
+import BentoItem from "./BentoItem.astro";
+import BoxArrowIcon from "@/components/Icons/BoxArrow.astro";
+import { Image } from "astro:assets";
+import CatIlustration from "@/assets/palm.jpg";
+import TeamIlustration from "@/assets/playa.jpg";
+import IntermadeIlustration from "@/assets/pueblos-magicos.jpg";
+import HardIlustration from "@/assets/playa.jpg";
+import StacksIlustration from "@/assets/playa.jpg";
+---
+
+<h2
+  class="text-purple-800 dark:text-yellow-200 text-4xl text-center text-balance uppercase font-bold"
+>
+  EL viaje comienza en mexico.
+</h2>
+
+<section
+  class={`
+    w-full max-w-auto mt-0
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+>
+  <BentoItem class="col-span-10 md:col-span-4" title="Playas" subtitle="">
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-black-950
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/playa.jpg')"
+    >
+    </div>
+
+    <div slot="ilustration">
+      <!-- <Image
+        class="absolute size-5/6 -bottom-4 -right-4 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={CatIlustration}
+        alt="Ilustración de un reto de programación"
+      /> -->
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para quienes no buscan retos muy complicados o están iniciándose en
+      el mundo de la programación.
+    </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href="/beginner"
+          target="_parent"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos para principiantes</span>
+        </a>
+      </span>
+    </div>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="Pueblos magicos"
+    subtitle=""
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/pueblos-magicos.jpg')"
+    >
+    </div>
+
+    <div slot="ilustration">
+      <!-- <Image
+        class="absolute size-6/5 md:size-full -bottom-4 -right-32 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={IntermadeIlustration}
+        alt="Ilustración de un reto de programación"
+      /> -->
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para quienes buscan retos más desafiantes y desean poner a prueba
+      sus conocimientos.
+    </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos para intermedios</span>
+        </a>
+      </span>
+    </div>
+  </BentoItem>
+
+  <BentoItem class="col-span-10 md:col-span-6" title="Ecoturismo" subtitle="">
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/ecoturismo.jpg')"
+    >
+    </div>
+
+    <div slot="ilustration">
+      <!-- <Image
+        class="absolute size-6/5 md:size-5/6 -bottom-4 -right-24 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={HardIlustration}
+        alt="Ilustración de un reto de programación"
+      /> -->
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para aquellos que están completamente inmersos en el mundo de la
+      programación.
+    </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos para expertos</span>
+        </a>
+      </span>
+    </div>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="Centros historicos"
+    subtitle=""
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/centro-historico.jpg')"
+    >
+    </div>
+
+    <div slot="ilustration">
+      <!-- <Image
+        class="absolute size-5/6 -bottom-4 -right-4 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={TeamIlustration}
+        alt="Ilustración de un reto de programación"
+      /> -->
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para quienes buscan trabajar en equipo y aprender de otros
+      desarrolladores.
+    </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href=""
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos para trabajo en equipo</span>
+        </a>
+      </span>
+    </div>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-10"
+    title="Montañas de mexico"
+    subtitle=""
+  >
+    <div
+      slot="image"
+      class="transition-scale absolute bottom-0 left-0 top-0
+-z-10 h-full w-full bg-black-950
+bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/montañas-mexico.jpg')"
+    >
+    </div>
+
+    <div slot="ilustration">
+      <!-- <Image
+        class="absolute size-96 -bottom-4 -right-4 z-10 hover:scale-105 duration-1000 ease-in-out group-hover:scale-110"
+        src={StacksIlustration}
+        alt="Ilustración de un reto de programación"
+      /> -->
+    </div>
+
+    <p slot="content" class="max-w-xl text-base md:text-lg text-white">
+      Ideal para quienes buscan trabajar con tecnologías específicas y
+      especializarse en un área en particular.
+    </p>
+    <div slot="links" class="flex justify-end items-center">
+      <span
+        class="overflow-hidden rounded-sm border bg-white/80 shadow-sm flex items-center justify-center"
+      >
+        <a
+          href=`/blog`
+          target="_parent"
+          rel="noopener noreferrer"
+          class="inline-block border-e p-2 text-gray-700 hover:bg-white focus:relative"
+        >
+          <BoxArrowIcon class="size-5" />
+          <span class="sr-only">Ir a los retos de stacks específicos</span>
+        </a>
+      </span>
+    </div>
+  </BentoItem>
+</section>
