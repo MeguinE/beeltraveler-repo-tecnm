@@ -1,13 +1,15 @@
 ---
 import Container from "@/components/Container.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import Search from "./Icons/Search.astro";
 
 const menuitems = [
-  { href: "/about", label: "About Us" },
-  { href: "/#services", label: "Services" },
-  { href: "/#projects", label: "Get a Quote" },
-  { href: "/pricing", label: "Pricing" },
-  { href: "/articles", label: "Blog" },
+  { href: "/", label: "Inicio" },
+  { href: "/about", label: "Sobre nosotros" },
+  { href: "/#services", label: "Servicios" },
+  { href: "/#projects", label: "Anunciar agencia" },
+  { href: "/pricing", label: "Paquetes" },
+  { href: "/articles", label: "Nuestras agencias" },
 ];
 ---
 
@@ -42,7 +44,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.href}
-                      class="block py-2 px-3 text-black rounded lg:bg-transparent lg:p-0"
+                      class="block hover:underline decoration-[#99DC49] py-2 px-3 text-black rounded lg:bg-transparent lg:p-0"
                     >
                       {item.label}
                     </a>
@@ -53,16 +55,16 @@ const menuitems = [
           </MenuItems>
 
           <div class="relative lg:ml-4">
-            <input
-              type="text"
-              placeholder="Search..."
-              class="block w-full lg:w-64 py-2 px-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
-            />
-            <button
-              class="absolute inset-y-0 right-0 px-4 py-2 text-white bg-indigo-600 rounded-r-lg"
-            >
-              Search
-            </button>
+            <div class="flex items-center">
+              <input
+                type="text"
+                placeholder="Buscar"
+                class="block w-full lg:w-64 py-2 px-4 rounded-l-lg border border-gray-300 focus:ring-2 focus:ring-[#8dc942] focus:outline-none"
+              />
+              <div class="bg-gray-300 p-2 rounded-r-lg">
+                <Search />
+              </div>
+            </div>
           </div>
         </Astronav>
       </header>
