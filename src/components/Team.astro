@@ -31,8 +31,8 @@ import Accordion from "./Accordion.astro";
 
   <div class="relative flex flex-col items-center md:flex-row pt-6">
     <Topic
-      title="Team"
-      description="Meet the skilled and experienced team behind our successful digital marketing strategies"
+      title="Nuestro equipo"
+      description="Conoce a nuestros colaboradores, un grupo de estudiantes guiados de su asesor. Juntos son los responsables de llevar a cabo este gran proyecto|."
     />
   </div>
 
@@ -45,7 +45,11 @@ import Accordion from "./Accordion.astro";
               <div class="self-stretch justify-start items-start inline-flex">
                 <div class="grow shrink basis-0 justify-start items-center gap-8 flex">
                   <div class="h-[102.82px] left-0 top-0 relative">
-                    <img src={profile} alt={name} />
+                    <img
+                      src={profile}
+                      class="w-full h-32 rounded-full object-cover"
+                      alt={name}
+                    />
                   </div>
                   <div class="flex-col justify-end items-start inline-flex">
                     <div class="text-lg font-normal">{title}</div>
