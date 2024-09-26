@@ -1,10 +1,10 @@
 {
-  "name": "",
+  "name": "beeltraveler-repo-tecnm",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
+     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -16,6 +16,9 @@
     "@react-spring/web": "^9.7.4",
     "astro": "^4.15.5",
     "astro-navbar": "^2.3.3",
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
+    "mysql2": "^3.11.3",
     "swiper": "^11.1.14",
     "tailwindcss": "^3.4.11",
     "typescript": "^5.6.2"
